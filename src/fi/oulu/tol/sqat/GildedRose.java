@@ -16,16 +16,31 @@ public class GildedRose {
         System.out.println("OMGHAI!");
 		
         items = new ArrayList<Item>();
-        items.add(new Item("+5 Dexterity Vest", 10, 20));
-        items.add(new Item("Aged Brie", 2, 0));
-        items.add(new Item("Elixir of the Mongoose", 5, 7));
+        items.add(new Item("+5 Dexterity Vest", 0, 20));
+        items.add(new Item("+10 Dexterity Vest", 5, 20));
+        items.add(new Item("Elixir of the Mongoose", 5, 0));
+        items.add(new Item("Potion of the Mongoose", 5, 7));
+        items.add(new Item("Aged Brie", 0, 5));
+        items.add(new Item("Aged Brie", 2, 3));
+        items.add(new Item("Aged Brie", 0, 51));
+        items.add(new Item("+15 Dexterity Vest", 5, 51));
         items.add(new Item("Sulfuras, Hand of Ragnaros", 0, 80));
+        items.add(new Item("Sulfuras, Hand of Ragnaros", -1, 10));
         items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
+        items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 10, 30));
+        items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 5, 40));
+        items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 0, 50));
+        items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49));
+        items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 5, 48));
+        items.add(new Item("+5 Dexterity Vest", 0, 0));      
         items.add(new Item("Conjured Mana Cake", 3, 6));
 
         updateQuality();
 }
-
+	
+	public static List<Item> getItems() {
+		return items;
+	}
 
 	
     public static void updateQuality()
